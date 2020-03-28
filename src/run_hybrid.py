@@ -14,8 +14,8 @@ from model import network
 
 
 if __name__ == '__main__':
-    X = load_train_data(1)
-    X_test = load_train_data(2)
+    X = load_train_data('./processed/train')
+    X_test = load_train_data('./processed/test')
 
     dim = (32,64,3)
     batch_size = 2**16
